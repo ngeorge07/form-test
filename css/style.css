@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 1rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+/*# sourceMappingURL=style.css.map */

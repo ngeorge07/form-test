@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="node_modules/vanillajs-datepicker/dist/css/datepicker-bs5.css"
+      href="node_modules/vanillajs-datepicker/dist/css/datepicker-bs5.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -13,16 +13,43 @@
   </head>
 
   <body>
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label for="date"
-          >Date:
-          <input autocomplete="off" placeholder="mm/dd/yyyy" id="date" />
-        </label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="https://usebasin.com/f/ab2834d7e27b"
+    >
+      <div>
+        <label for="email">E-mail: </label>
+        <input type="email" name="e-mail" id="email" />
+      </div>
+
+      <div>
+        <label for="date">Date: </label>
+        <input
+          name="date"
+          autocomplete="off"
+          placeholder="mm/dd/yyyy"
+          id="date"
+        />
+      </div>
+
+      <template>
+        <div>
+          <input type="radio" id="1000" name="time" value="11:00" checked />
+          <label for="1000">10:00</label>
+
+          <input type="radio" id="1100" name="time" value="12:00" />
+          <label for="1100">11:00</label>
+
+          <input type="radio" id="1200" name="time" value="13:00" />
+          <label for="1200">12:00</label>
+        </div>
+      </template>
+
+      <p>Time:</p>
+
+      <button class="hidden" type="submit">Send</button>
     </form>
 
     <script type="module" src="script.js"></script>
