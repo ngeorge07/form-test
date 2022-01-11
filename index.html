@@ -35,21 +35,29 @@
       </div>
 
       <template>
-        <div>
-          <input type="radio" id="1000" name="time" value="11:00" checked />
-          <label for="1000">10:00</label>
+        <div id="time-options">
+          <div id="container-1100">
+            <input type="radio" id="1100" name="time" value="11:00" checked />
+            <label for="1100">11:00</label>
+          </div>
 
-          <input type="radio" id="1100" name="time" value="12:00" />
-          <label for="1100">11:00</label>
+          <div id="container-1200">
+            <input type="radio" id="1200" name="time" value="12:00" />
+            <label for="1200">12:00</label>
+          </div>
 
-          <input type="radio" id="1200" name="time" value="13:00" />
-          <label for="1200">12:00</label>
+          <div id="container-1300">
+            <input type="radio" id="1300" name="time" value="13:00" />
+            <label for="1300">13:00</label>
+          </div>
         </div>
       </template>
 
-      <p>Time:</p>
+      <div id="time" class="hidden">
+        <p>Time:</p>
+      </div>
 
-      <button class="hidden" type="submit">Send</button>
+      <button id="submit" class="hidden" type="submit">Send</button>
     </form>
 
     <script type="module" src="script.js"></script>
